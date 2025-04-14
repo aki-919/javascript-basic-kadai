@@ -1,9 +1,3 @@
-const event = new Date();
-const options = {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-};
+const moonLanding = new Date();
 
-console.log(event.toLocaleDateString(undefined, options));
-// Expected output (varies according to local timezone and default locale): Thursday, December 20, 2012
+console.log(moonLanding.getFullYear()+"年",moonLanding.getMonth()+1+"月",moonLanding.getDate()+"日");
